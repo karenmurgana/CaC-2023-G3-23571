@@ -1,35 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
 
+
 /* font-family: 'Raleway', sans-serif; */
-* {
+*, *::before, *::after {
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /** ---------------- **/
 /** --- NAVBAR --- **/
 /** ---------------- **/
+
 .navbar {
-    padding: 30px;
+    padding: 36px;
     background-color: #30343f;
 }
 
 .navbar-brand>img {
-    width: 80%;
+    width: 300px;
 }
 
 .nav-link,
 .nav-link:focus {
     color: white;
-    font-size: 1rem;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
     padding: 5px 15px;
-    /* margin-left: 20px; */
 }
 
 .navbar-nav>.nav-item {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .nav-link:hover {
@@ -73,13 +75,11 @@
 
 .primerSector {
     background-image: url("../img/funkos-banner.webp");
-    margin: 0;
-    padding: 200px 0px;
-    background-size: cover;
+    padding: 128px;
     background-position: top;
+    background-size: cover;
     background-attachment: fixed;
     position: relative;
-    /* backdrop-filter: blur(2px) brightness(.9); */
 }
 
 .primerSector::before {
@@ -92,23 +92,41 @@
     left: 0;
     backdrop-filter: blur(2px) brightness(0.9);
 }
-
 .contenidoPrimerSector {
-    backdrop-filter: blur(0) brightness(1);
+    /* margin: 0px 63.5px; */
+    /* backdrop-filter: blur(0) brightness(1); */
+    /* width: 1200px; */
+    padding: 0px 63px;
     color: white;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    z-index: 2;
+    position: relative;    
 }
 
+.primerSectorTitle{
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+.primerSectorTexto{
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+}
 .linkPrimerSector,
 .linkPrimerSector:focus {
-    
+    display: inline-block;
     background-color: #fff;
     color: #30343f;
     padding: 12px 68px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 18px;
 }
 .linkPrimerSector:hover {
     background-color: hsla(0, 100%, 60%, 0.9);
@@ -185,12 +203,12 @@
 
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
+        transform: translateX(33.33%);
     }
 
     .carousel-inner .carousel-item-start.active,
     .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
+        transform: translateX(-33.33%);
     }
 }
 
@@ -200,7 +218,6 @@
 }
 
 .carousel-nav-arrow{   
-    /* padding: 20px; */
     color: black;    
 }
 
@@ -213,9 +230,7 @@
     color: #fff;
     text-transform: uppercase;
     padding: 9px 12px;
-    /* background-color: transparent; */
-    /**TODO: Lo dejo en rojo temporalmente, arreglar */
-    background-color: red !important;
+    background-color: transparent;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 4px;
     box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.1);
@@ -226,10 +241,6 @@
     line-height: 1;
     height: 50px;
     width: 50px;
-}
-
-.tercerSector {
-    padding: 50px;
 }
 
 
@@ -258,26 +269,50 @@
 }
 
 
+.tercerSector {
+    padding: 50px;
+}
+
+.tercerSectorTitle{
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 46px;
+    margin-bottom: 36px;
+}
+
+.terSecTagNuevo{
+    font-size: small;
+    text-transform: uppercase;
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+}
 .terSecTagLink{
     text-decoration: none;
     color: inherit;
 }
 .terSecTagFranquicia{
     font-weight: 500;
-
+    font-size: 14px;
 }
 .terSecTagNombre{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .terSecTagPrecio{
+    font-size: 16px;
+    color: #1F1F1F;
 
 }
 .terSecTagCuota{
     color: #1D85B5;
     font-size: small;
     font-weight: 700;
+    font-size: 14px;
 }
 
 /** -------------- **/
@@ -292,6 +327,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: inline-block;
+}
+.footerList>li>a{
+    display: inline-block;
 
 }
 

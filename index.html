@@ -47,11 +47,11 @@
         </div>
     </nav>
 
-    <section class="primerSector container-fluid">
+    <section class="primerSector ">
         <article class="contenidoPrimerSector container">
-            <h3>Nuevos Ingresos</h3>
-            <p>Descubrí el próximo Funko Pop de tu colección</p>
-            <a href="" class='linkPrimerSector'>SHOP</a>
+            <h3 class='primerSectorTitle'>Nuevos Ingresos</h3>
+            <p class='primerSectorTexto'>Descubrí el próximo Funko Pop de tu colección</p>
+            <a href="./shop.html" class='linkPrimerSector'>SHOP</a>
         </article>
     </section>
 
@@ -66,12 +66,12 @@
                 <a href="#" class="linkSegundoSector">VER COLECCIÓN</a>
             </article>
             <picture class="col-6">
-                <img src="./img/pokemon/vulpix-1.webp" alt="" srcset="" />
+                <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable de la colección Pokemon" />
             </picture>
         </section>
         <section class="row container align-items-center m-auto">
             <picture class="col-6">
-                <img src="./img/star-wars/baby-yoda-1.webp" alt="" srcset="" />
+                <img src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable de la colección Star Wars" />
             </picture>
             <article class="col-6">
                 <h3 class="tituloSegundoSector">Star Wars</h3>
@@ -91,12 +91,13 @@
                 <a href="#" class="linkSegundoSector">VER COLECCIÓN</a>
             </article>
             <picture class="col-6">
-                <img src="./img/harry-potter/snape-patronus-1.webp" alt="" srcset="" />
+                <img src="./img/harry-potter/snape-patronus-1.webp"
+                    alt="Figura coleccionable de la colección Harry Potter" />
             </picture>
         </section>
         <section class="row container align-items-center m-auto">
             <picture class="col-6">
-                <img src="img/nr-cover.png" width="550px" alt="" srcset="" />
+                <img src="img/nr-cover.png" width="550px" alt="Figura coleccionable de la colección Naruto" />
             </picture>
             <article class="col-6">
                 <h3 class="tituloSegundoSector">Naruto</h3>
@@ -112,19 +113,21 @@
 
     <section class="tercerSector container">
         <div class="container text-center my-3">
-            <h2 class="font-weight-light text-start">ÚLTIMOS LANZAMIENTOS</h2>
+            <h2 class="text-start tercerSectorTitle">ÚLTIMOS LANZAMIENTOS</h2>
 
-            <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-interval="false">
-                    <div class="carousel-inner text-start" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="col-4">
+            <div class="mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide " data-bs-interval="false">
+                    <div class="carousel-inner text-start row" role="listbox">
+                        <div class="carousel-item active col-3">
+                            <!-- <div class="col-4"> -->
                                 <div class="card border-0">
                                     <a href="javascript:void(0);" class='terSecTagLink'>
                                         <picture class="card-img terSecTagImgCover">
-                                            <img src="img/star-wars/trooper-1.webp"
-                                                class="img-fluid terSecTagImgFrente" />
+                                            <span class="card-item terSecTagNuevo">Nuevo</span>
+                                            <img src="img/star-wars/trooper-1.webp" class="img-fluid terSecTagImgFrente"
+                                                alt='Figura coleccionable Funko de un Stormtrooper' />
                                             <img src="img/star-wars/trooper-box.webp"
+                                                alt='Figura coleccionable Funko de un Stormtrooper en caja'
                                                 class="img-fluid terSecTagImgFondo" />
                                         </picture>
                                         <div class="card-body">
@@ -139,16 +142,20 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
-                        <div class="carousel-item">
-                            <div class="col-4">
+                        <div class="carousel-item col-4">
+                            <!-- <div class="col-4"> -->
                                 <div class="card border-0">
                                     <a href="javascript:void(0);" class='terSecTagLink'>
                                         <picture class="card-img terSecTagImgCover">
+                                            <span class="card-item terSecTagNuevo">Nuevo</span>
+
                                             <img src="img/pokemon/pidgeotto-1.webp"
+                                                alt='Figura coleccionable Funko de Pidgeotto'
                                                 class="img-fluid terSecTagImgFrente" />
                                             <img src="img/pokemon/pidgeotto-box.webp"
+                                                alt='Figura coleccionable Funko de Pidgeotto en caja'
                                                 class="img-fluid terSecTagImgFondo" />
 
                                         </picture>
@@ -166,16 +173,19 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
-                        <div class="carousel-item">
-                            <div class="col-4">
+                        <div class="carousel-item col-4">
+                            <!-- <div class="col-4"> -->
                                 <div class="card border-0">
                                     <a href="javascript:void(0);" class='terSecTagLink'>
                                         <picture class="card-img terSecTagImgCover">
+                                            <span class="card-item terSecTagNuevo">Nuevo</span>
                                             <img src="img/harry-potter/luna-1.webp"
+                                                alt='Figura coleccionable Funko de Luna Lovegood'
                                                 class="img-fluid terSecTagImgFrente" />
                                             <img src="img/harry-potter/luna-box.webp"
+                                                alt='Figura coleccionable Funko de Luna Lovegood en caja'
                                                 class="img-fluid terSecTagImgFondo" />
 
                                         </picture>
@@ -191,7 +201,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                     <button class="carousel-control-prev bg-transparent w-auto" href="#recipeCarousel" role="button"
