@@ -196,6 +196,7 @@
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex;
+    flex-grow: inherit;
 }
 
 /* medium and up screens */
@@ -203,12 +204,12 @@
 
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
-        transform: translateX(33.33%);
+        transform: translateX(33%);
     }
 
     .carousel-inner .carousel-item-start.active,
     .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.33%);
+        transform: translateX(-32%);
     }
 }
 
@@ -237,7 +238,7 @@
     text-shadow: 0 0.25em 0.5em rgba(0,0,0,.1);
     opacity: 1;
     cursor: pointer;
-    transition: opacity 150ms ease,border 300ms ease-in-out;
+    transition: opacity 0ms linear;
     line-height: 1;
     height: 50px;
     width: 50px;
@@ -319,7 +320,7 @@
 /** --- Footer --- **/
 /** -------------- **/
 .contenedorFooter {
-    padding: 50px;
+    padding: 50px 20px 20px;
     background-color: #30343f;
 }
 
